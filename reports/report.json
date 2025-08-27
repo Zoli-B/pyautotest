@@ -1,0 +1,229 @@
+[
+{
+  "description": [
+    "As a tester",
+    "I want to add and remove elements",
+    "So that I can verify dynamic DOM changes"
+  ],
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/add_remove.feature:6",
+      "name": "Add then delete an element",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/add_remove.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/common_steps.py:14"
+          },
+          "name": "a f\u0151oldalon vagyok",
+          "result": {
+            "duration": 2.0199921131134033,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/add_remove.feature:8",
+          "match": {
+            "arguments": [
+              {
+                "name": "selector_key",
+                "value": "add_remove_link"
+              }
+            ],
+            "location": "features/steps/common_steps.py:22"
+          },
+          "name": "r\u00e1klikkelek a \"add_remove_link\" kulcs\u00fa elemre",
+          "result": {
+            "duration": 0.31939220428466797,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/add_remove.feature:9",
+          "match": {
+            "arguments": [
+              {
+                "name": "path",
+                "value": "/add_remove_elements/"
+              }
+            ],
+            "location": "features/steps/common_steps.py:26"
+          },
+          "name": "az URL \"/add_remove_elements/\" v\u00e9gz\u0151d\u00e9sre v\u00e1lt",
+          "result": {
+            "duration": 0.003997802734375,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/add_remove.feature:10",
+          "match": {
+            "arguments": [
+              {
+                "name": "selector_key",
+                "value": "add_button"
+              }
+            ],
+            "location": "features/steps/common_steps.py:22"
+          },
+          "name": "r\u00e1klikkelek a \"add_button\" kulcs\u00fa elemre",
+          "result": {
+            "duration": 0.05089735984802246,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/add_remove.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/add_remove_steps.py:9"
+          },
+          "name": "megpr\u00f3b\u00e1lom t\u00f6r\u00f6lni az elemet",
+          "result": {
+            "duration": 0.04399919509887695,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/add_remove.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/add_remove_steps.py:20"
+          },
+          "name": "legal\u00e1bb 0 \u00e9s legfeljebb 1 \"delete_button\" gomb l\u00e1that\u00f3",
+          "result": {
+            "duration": 0.0059854984283447266,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/add_remove.feature:1",
+  "name": "Add/Remove Elements",
+  "status": "passed",
+  "tags": []
+},
+
+{
+  "description": [
+    "As a tester",
+    "I want to login with username and password"
+  ],
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/auth.feature:6",
+      "name": "Login",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/auth.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/common_steps.py:14"
+          },
+          "name": "a f\u0151oldalon vagyok",
+          "result": {
+            "duration": 1.9039523601531982,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/auth.feature:8",
+          "match": {
+            "arguments": [
+              {
+                "name": "selector_key",
+                "value": "auth"
+              }
+            ],
+            "location": "features/steps/common_steps.py:22"
+          },
+          "name": "r\u00e1klikkelek a \"auth\" kulcs\u00fa elemre",
+          "result": {
+            "duration": 0.21931147575378418,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/auth.feature:9",
+          "match": {
+            "arguments": [
+              {
+                "name": "path",
+                "value": "/basic_auth"
+              }
+            ],
+            "location": "features/steps/common_steps.py:26"
+          },
+          "name": "az URL \"/basic_auth\" v\u00e9gz\u0151d\u00e9sre v\u00e1lt",
+          "result": {
+            "duration": 0.0059964656829833984,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/auth.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/auth.py:9"
+          },
+          "name": "be\u00edrtam a felhaszn\u00e1l\u00f3nevet \u00e9s a jelsz\u00f3t",
+          "result": {
+            "duration": 0.4250202178955078,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/auth.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/auth.py:14"
+          },
+          "name": "Congratulations! You must have the proper credentials. sz\u00f6veget kapom vissza",
+          "result": {
+            "duration": 0.02518153190612793,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/auth.feature:1",
+  "name": "Login in page",
+  "status": "passed",
+  "tags": []
+}
+]
